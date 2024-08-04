@@ -1,0 +1,29 @@
+/* CSS For Expense Item */
+
+.expense-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.expense-item:hover {
+    background-color: #f9f9f9;
+}
+
+.expense-details {
+    flex: 1;
+    text-align: start;
+}
+
+.expense-description {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.expense-amount {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff6347;
+}
