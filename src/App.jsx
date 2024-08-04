@@ -6,9 +6,6 @@ const expenseList = [
   { id: 2, amount: 2300, description: 'Fitness bill' },
   { id: 3, amount: 1800, description: 'Electricity bill' },
   { id: 4, amount: 12000, description: 'Flight to Bangkok' },
-  { id: 5, amount: 2700, description: 'Lunch with friends' },
-  { id: 6, amount: 1500, description: 'Movie tickets' },
-  { id: 7, amount: 800, description: 'Taxi fare' }
 ];
 
 function App() {
@@ -31,14 +28,36 @@ function App() {
       <div className="expense-list">
         <h2>Expenses</h2>
         <ul>
-          {expenseList.map((expense) => (
-            <div key={expense.id} className="expense-item">
-              <div className="expense-details">
-                <div className="expense-description">{expense.description}</div>
-              </div>
-              <div className="expense-amount">${expense.amount}</div>
+          <div className="expense-item">
+            <div className="expense-details">
+              <div className="expense-description">{expenseList[0].description}</div>
             </div>
-          ))}
+            <div className="expense-amount">${expenseList[0].amount}</div>
+          </div>
+        </ul>
+        <ul>
+          <div className="expense-item">
+            <div className="expense-details">
+              <div className="expense-description">{expenseList[1].description}</div>
+            </div>
+            <div className="expense-amount">${expenseList[1].amount}</div>
+          </div>
+        </ul>
+        <ul>
+          <div className="expense-item">
+            <div className="expense-details">
+              <div className="expense-description">{expenseList[2].description}</div>
+            </div>
+            <div className="expense-amount">${expenseList[2].amount}</div>
+          </div>
+        </ul>
+        <ul>
+          <div className="expense-item">
+            <div className="expense-details">
+              <div className="expense-description">{expenseList[3].description}</div>
+            </div>
+            <div className="expense-amount">${expenseList[3].amount}</div>
+          </div>
         </ul>
       </div>
     </div>
